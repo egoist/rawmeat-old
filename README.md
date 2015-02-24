@@ -27,6 +27,6 @@ gulp run
 
 ## License
 
-MIT.
+[MIT](LICENSE).
 
 
