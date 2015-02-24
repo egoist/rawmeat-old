@@ -1,0 +1,83 @@
+@import 'common'
+
+.header
+  padding 60px 0
+
+.container
+  width 800px
+  margin 0 auto
+
+.content
+  a
+    color #346B9A
+
+#posts
+  margin 0
+  padding 0
+  li
+    margin 40px 0
+    padding 0
+    padding-bottom 20px
+    border-bottom 1px solid #eee
+    list-style none
+    &:last-child
+      border-bottom none
+
+.site-title
+  font-size 19px
+  font-weight 400
+  margin-left 180px
+
+.post
+  margin-bottom 4em
+
+.post-date, .left
+  text-align right
+  float left
+  width 180px
+  font-size 12px
+  font-family Helvetica, Arial, sans-serif
+  a
+    font-size 12px
+    font-weight bold
+    margin-right 50px
+
+.left
+  .side-title
+    font-size 15px
+    margin-right 50px
+
+.post-main, .content-slim
+  float left
+  width 480px
+  font-size 14px
+  margin-top 1px
+  p
+    margin-top 0
+  h2
+    font-size 16px
+    margin-bottom 10px
+    a
+      color #333
+
+.clearfix,.content-flux
+  &:after
+    clear both
+    content " "
+    visibility hidden
+    height 0
+    display block
+
+.panels
+  li
+    float left
+  li+li
+    margin-left 10px
+
+.panel
+  display inline-block
+  border 1px solid #eee
+  padding 5px 15px 5px 15px
+  border-radius 20px
+  &:hover
+    border-color #aaa

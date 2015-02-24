@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+
+{% block title %}{{ post.pagetitle }}{% endblock %}
+
+{% block content %} 
+  <article class="post clearfix">
+        <div class="post-date">
+          <a href="/post/{{ post._id.toString() }}">{{ post.created_at }}</a>
+        </div>
+        <div class="post-main">
+          {% if post.title %}
+          <h2><a href="/post/{{ post._id.toString() }}">{{ post.title }}</a></h2>
+          {% endif %}
+          <div class="post-body">
+            {{ post.body|safe }}
+          </div>
+          {% if username %}
+            <ul class="panels clearfix">
+              <li><a class="panel" href="/post/{{ post._id.toString() }}/edit">Edit post</a></li>
+              <li><a class="panel" href="/post/{{ post._id.toString() }}/delete">Delete post</a></li>
+            </ul>
+          {% endif %}
+        </div>
+  </article>
+
+{% endblock %}

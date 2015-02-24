@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+
+{% block title %}User Action{% endblock %}
+
+{% block content %}
+  <div class="content-flux">
+  <div class="left">
+    <h2 class="side-title">Sign In</h2>
+  </div>
+  <div class="content-slim">
+  <form action="/signin" method="post">
+    <p><input type="text" class="input" placeholder="Username" name="username"></p>
+    <p><input type="password" class="input" placeholder="Password" name="password"></p>
+    <p><input type="submit" value="Sign In" class="button"></p>
+  </form>
+  <div class="hr m20"></div>
+  </div>
+  </div>
+  {# signin + register #} 
+  <div class="content-flux">
+  <div class="left">
+    <h2 class="side-title">Register</h2>
+  </div>
+  <div class="content-slim">
+  <form action="/register" method="post">
+    <p><input type="text" class="input" placeholder="Username" name="username"></p>
+    <p><input type="password" class="input" placeholder="Password" name="password"></p>
+    <p><input type="password" class="input" placeholder="Confirm password" name="password_c"></p>
+    <p><input type="submit" value="Register" class="button"></p>
+  </form>
+  </div>
+  </div>
+{% endblock %}

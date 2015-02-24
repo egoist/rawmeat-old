@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{% block title %}Raw Meat{% endblock %}</title>
+  <link rel="stylesheet" type="text/css" href="/css/main.css">
+</head>
+<body>
+  <header class="header">
+      <div class="container">
+        <h1 class="site-title"><a href="/">Raw Meat is a quote blog by {% if M.fullname %} {{ M.fullname }} {% else %} {{ M.username }} {% endif %}</a></h1>
+      </div>
+    </header>
+  <section id="content" class="content">   
+    <div class="container">
+    {% block content %}
+      <p>Missing content!</p>
+    {% endblock %}
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block title %}Raw Meat{% endblock %}
+
+{% block content %}
+    {% for post in posts %}
+      <article class="post clearfix">
+        <div class="post-date">
+          <a href="/post/{{ post._id.toString() }}">{{ post.created_at }}</a>
+        </div>
+        <div class="post-main">
+          {% if post.title %}
+          <h2><a href="/post/{{ post._id.toString() }}">{{ post.title }}</a></h2>
+          {% endif %}
+          <div class="post-body">
+            {{ post.body|safe }}
+          </div>
+        </div>
+      </article>
+    {% endfor %}
+{% endblock %}
