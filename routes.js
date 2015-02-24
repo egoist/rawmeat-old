@@ -7,12 +7,13 @@ var render = require('./lib/render');
 var bcrypt = require('co-bcrypt');
 var moment = require('moment');
 var marked = require('marked');
+var config = require('./config');
 
 // Set up mongoDB
 var Mongorito = require('mongorito');
 var Model = Mongorito.Model;
 
-Mongorito.connect('localhost/rmblog');
+Mongorito.connect('localhost/'+config.db.name);
 
 // Wrap mongoDB in generator goodness
 var Posts = Model.extend({
@@ -36,6 +37,7 @@ co(function *(){
   if (Site) {
     global.S = Site.attributes;
   }
+  global.C = config;
 })()
 
 // Helpers
