@@ -25,6 +25,16 @@ cd /path/to/raw/meat
 gulp run
 ```
 
+## Technology
+
+Thanks to the open-source world for providing unlimited amazing technologies for developer like me:
+
+- [Node.js](http://nodejs.org)
+- [Koa.js](https://github.com/koajs/koa)
+- [Mongorito](http://mongorito.com/)
+- [Toka](https://github/com/0x142857/toka)
+- Many others amaing libraries we used.
+
 ## License
 
 [MIT](LICENSE).
