@@ -1,6 +1,6 @@
 # Raw Meat
 
-![preview](http://api.drp.io/files/54ec5073003b4.png)
+[![preview](http://api.drp.io/files/54ec5073003b4.png)](docs/screenshots.md)
 
 Raw Meat is a quote blog by Kchan Zen. It's like Tumblr but simplier, made for the Internet's own boy —— Aaron Swarts.
 
@@ -32,7 +32,7 @@ Thanks to the open-source world for providing unlimited amazing technologies for
 - [Node.js](http://nodejs.org)
 - [Koa.js](https://github.com/koajs/koa)
 - [Mongorito](http://mongorito.com/)
-- [Toka](https://github/com/0x142857/toka)
+- [Toka](https://github.com/0x142857/toka)
 - Many others amaing libraries we used.
 
 ## License
