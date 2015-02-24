@@ -6,7 +6,7 @@ Raw Meat is a quote blog by Kchan Zen. It's like Tumblr but simplier, made for t
 
 ## Getting Started
 
-### Install for GitHub
+### Install from GitHub
 
 Raw Meat isn't stable now, you can install the latest version from GitHub.
 
