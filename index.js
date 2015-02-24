@@ -31,7 +31,6 @@ app.use(session({
 
 // Static file middleware
 app.use(serve(__dirname + '/static'));
-
 // route middleware
 var routes = require('./routes.js');
 
