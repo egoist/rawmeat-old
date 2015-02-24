@@ -33,7 +33,7 @@ Thanks to the open-source world for providing unlimited amazing technologies for
 - [Koa.js](https://github.com/koajs/koa)
 - [Mongorito](http://mongorito.com/)
 - [Toka](https://github.com/0x142857/toka)
-- Many others amaing libraries we used.
+- Many other amaing libraries we used.
 
 ## License
 
